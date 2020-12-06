@@ -19,8 +19,10 @@ input[text],
 button {
   color: #888;
   font-family: Cambria, Georgia;
+  margin-left: 2em;
+}
+body {
   background-image: url(https://image.freepik.com/free-vector/abstract-geometric-shapes-colorful-modern-pattern_38782-838.jpg);
-  margin: 1em;
 }
 a {
   cursor: pointer;
