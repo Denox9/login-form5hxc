@@ -53,6 +53,7 @@
 .adds {
   width: auto;
   grid-column: 3;
+  margin-top: 3em;
 }
 .adds1 {
   height: 70vh;
