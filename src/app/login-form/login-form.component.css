@@ -1,0 +1,68 @@
+* {
+  margin: 0%x;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: bold;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.904);
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+  box-shadow: 1px 2px 7px 1px;
+  margin-top: 2em 0em 0em 2em;
+  justify-content: center;
+  width: 70vw;
+}
+.nav {
+  display: flex;
+  background-color: #8a2be2;
+  justify-content: left;
+  min-width: 8vw;
+  box-shadow: 1px 2px 7px 1px;
+  margin: 1em;
+  height: 5em;
+}
+.logo {
+  text-transform: uppercase;
+  color: rgb(241, 241, 241);
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.logo h4 {
+  margin-left: 3vw;
+  margin-top: 1.5vh;
+  font-size: 4vh;
+}
+.nav1 {
+  display: flex;
+  background-color: #8a2be2;
+  justify-content: center;
+  min-width: 8vw;
+  box-shadow: 1px 2px 7px 1px;
+  margin-top: 2em;
+}
+.margin {
+  margin: 0.5in;
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+}
+.collums {
+  grid-column: 1 span 2;
+}
+.adds {
+  width: auto;
+  grid-column: 3;
+}
+.adds1 {
+  height: 70vh;
+  margin: auto;
+}
+col-xs-9 pull-left {
+  margin-left: 10em;
+}
+.userform {
+  grid-column: 1 span 2;
+  margin-left: 10em;
+  padding: 5px 10px;
+}

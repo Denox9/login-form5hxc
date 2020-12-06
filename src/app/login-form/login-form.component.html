@@ -1,0 +1,214 @@
+<body>
+	<nav class="nav">
+		<div class="logo">
+			<h4>ΔDENOX</h4>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="margin">
+			<div> </div>
+			<div> </div>
+			<div class="collums">
+				<div [hidden]="submitted">
+					<h1>Login Form</h1>
+					<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+						<div class="form-group">
+							<h4>Name</h4>
+							<label for="name">Firstname</label>
+							<input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                [(ngModel)]="model.name"
+                name="name"
+                #name="ngModel"
+              />
+
+						</div>
+							<div class="form-group">
+								<label for="name1">Middlename</label>
+								<input
+                type="text"
+                class="form-control"
+                id="name1"
+                required
+                [(ngModel)]="model.name1"
+                name="name1"
+                #name1="ngModel"
+              />
+
+						</div>
+								<div class="form-group">
+									<label for="name2">Lastname</label>
+									<input
+                type="text"
+                class="form-control"
+                id="name2"
+                required
+                [(ngModel)]="model.name2"
+                name="name2"
+                #name2="ngModel"
+              />
+
+						</div>
+
+									<div class="form-group">
+										<label for="address">Address</label>
+										<input
+                type="text"
+                class="form-control"
+                id="address"
+                required
+                [(ngModel)]="model.address"
+                name="address"
+                #address="ngModel"
+              />
+            </div>
+										<div class="form-group">
+											<label for="age">Age</label>
+											<input
+                type="text"
+                class="form-control"
+                id="age"
+                required
+                [(ngModel)]="model.age"
+                name="age"
+                #age="ngModel"
+              />
+            </div>
+
+
+
+											<div class="form-group">
+												<label for="power">Gender</label>
+												<select
+                class="form-control"
+                id="power"
+                required
+                [(ngModel)]="model.power"
+                name="power"
+                #power="ngModel"
+              >
+                <option *ngFor="let pow of powers" [value]="pow"
+                  >{{pow}}</option
+                >
+              </select>
+
+												<div class="form-group">
+													<label for="birthday">Birthday</label>
+													<input
+                type="text"
+                class="form-control"
+                id="birthday"
+                required
+                [(ngModel)]="model.birthday"
+                name="birthday"
+                #birthday="ngModel"
+              />
+            </div>
+													<div class="form-group">
+														<label for="email">Email</label>
+														<input
+                type="text"
+                class="form-control"
+                id="email"
+                required
+                [(ngModel)]="model.email"
+                name="email"
+                #email="ngModel"
+              />
+            </div>
+														<div class="form-group">
+															<label for="mobile">Mobile No.</label>
+															<input
+                type="text"
+                class="form-control"
+                id="mobile"
+                required
+                [(ngModel)]="model.mobile"
+                name="mobile"
+                #mobile="ngModel"
+              />
+            </div>
+														</div>
+														<button
+              type="submit"
+              class="btn btn-success"
+              [disabled]="!heroForm.form.valid"
+            >
+              Submit
+            </button>
+														<button
+              type="button"
+              class="btn btn-default"
+              (click)="newHero(); heroForm.reset()"
+            >
+              New Hero
+            </button>
+
+
+					</form>
+				</div>
+
+
+				<div class="userform" [hidden]="!submitted">
+					<h2>Login Information</h2>
+					<div class="row">
+						<div class="col-xs-3">Firstname</div>
+						<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Middlename</div>
+						<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name1 }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Lastname</div>
+						<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name2 }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Address</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.address }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Age</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.age }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Gender</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.power }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Birthday</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.birthday }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Email</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.email }}</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Mobile no.</div>
+						<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.mobile }}</div>
+					</div>
+
+					<br />
+					<button class="btn btn-primary" (click)="submitted=false">
+            Edit
+          </button>
+				</div>
+			</div>
+			<div class="adds">
+				<img
+          class="adds1"
+          src="https://i.pinimg.com/originals/94/0e/40/940e404626c3d1afb15497df81c6e147.png"
+          alt=""
+        />
+      </div>
+			</div>
+		</div>
+		<nav class="nav1">
+			<div class="logo">
+				<h6>Denox project 5HXC CPE6 2020</h6>
+			</div>
+		</nav>
+</body>
