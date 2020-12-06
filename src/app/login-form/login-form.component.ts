@@ -24,7 +24,7 @@ export class LoginFormComponent {
   }
 
   newHero() {
-    this.model = new User(" ", " ", " ", " ", " ", 0, " ", " ", 0);
+    this.model = new User(" ", " ", " ", " ", " ", name, " ", " ", name);
   }
 
   //////// NOT SHOWN IN DOCS ////////
