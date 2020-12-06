@@ -27,12 +27,6 @@ export class LoginFormComponent {
     this.model = new User(" ", " ", " ", " ", " ", 0, " ", " ", 0);
   }
 
-  skyDog(): User {
-    let myHero = new User("", "", "", "", "", 0, "", "", 0);
-    console.log("My hero is called " + myHero.name); // "My hero is called SkyDog"
-    return myHero;
-  }
-
   //////// NOT SHOWN IN DOCS ////////
 
   // Reveal in html:
