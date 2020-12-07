@@ -13,6 +13,7 @@
   margin-top: 2em 0em 0em 2em;
   justify-content: center;
   width: 70vw;
+  height: 160vh;
 }
 .nav {
   display: flex;
@@ -55,11 +56,12 @@
   grid-column: 3;
   margin-top: 3em;
   justify-content: center;
+  text-align: center;
 }
 .adds1 {
   height: 70vh;
-  margin: auto;
   justify-content: center;
+  text-align: center;
 }
 .userform {
   grid-column: 1 span 2;
@@ -71,7 +73,7 @@
   display: grid;
   grid-template-columns: repeat(autofill, 1fr);
   line-height: 1em;
-  background-color: #00ffd59d;
+  background-color: #00ffd5d0;
   width: 20em;
   height: 3em;
   margin-left: 2em;
@@ -89,4 +91,7 @@
 }
 .label {
   margin-right: 3em;
+}
+p {
+  text-align: center;
 }

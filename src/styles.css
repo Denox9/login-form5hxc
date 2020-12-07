@@ -13,6 +13,13 @@ h6 {
   justify-content: center;
   line-height: 2px;
 }
+h5 {
+  color: rgb(255, 196, 70);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  justify-content: center;
+  line-height: 2px;
+}
 body {
   margin: 2em;
 }
