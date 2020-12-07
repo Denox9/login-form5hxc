@@ -54,16 +54,39 @@
   width: auto;
   grid-column: 3;
   margin-top: 3em;
+  justify-content: center;
 }
 .adds1 {
   height: 70vh;
   margin: auto;
-}
-col-xs-9 pull-left {
-  margin-left: 10em;
+  justify-content: center;
 }
 .userform {
   grid-column: 1 span 2;
-  margin-left: 10em;
   padding: 5px 10px;
+  height: 85vh;
+  width: 65vw;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+  line-height: 1em;
+  background-color: #00ffd59d;
+  width: 20em;
+  height: 3em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.col-xs-3 {
+  margin-left: 2em;
+  grid-template-columns: 1;
+  width: 20vw;
+}
+.background {
+  background-image: url(https://cdn.dribbble.com/users/2107740/screenshots/8192097/media/022f6c2d47ee24d33423a8021eb8023b.gif);
+  background-position: right;
+  background-size: 90%;
+}
+.label {
+  margin-right: 3em;
 }

@@ -23,6 +23,7 @@
               name="name"
               #name="ngModel"
             />
+
           </div>
 						<div class="form-group">
 							<label for="name1">Middlename</label>
@@ -98,10 +99,11 @@
                 name="birthday"
                 #birthday="ngModel"
               />
-            </div>
-												<div class="form-group">
-													<label for="email">Email</label>
-													<input
+												<h6>&nbsp;&nbsp; MM/DD/YY</h6>
+											</div>
+											<div class="form-group">
+												<label for="email">Email</label>
+												<input
                 type="text"
                 class="form-control"
                 id="email"
@@ -111,9 +113,9 @@
                 #email="ngModel"
               />
             </div>
-													<div class="form-group">
-														<label for="mobile">Mobile No.</label>
-														<input
+												<div class="form-group">
+													<label for="mobile">Mobile No.</label>
+													<input
                 type="text"
                 class="form-control"
                 id="mobile"
@@ -123,15 +125,15 @@
                 #mobile="ngModel"
               />
             </div>
-													</div>
-													<button
+												</div>
+												<button
             type="submit"
             class="btn btn-success"
             [disabled]="!heroForm.form.valid"
           >
             Submit
           </button>
-													<button
+												<button
             type="button"
             class="btn btn-default"
             (click)="newHero(); heroForm.reset()"
@@ -144,52 +146,69 @@
 
 			</div>
 
-
-			<div class="userform" [hidden]="!submitted">
-				<h2>Login Information</h2>
-				<div class="row">
-					<div class="col-xs-3">Firstname</div>
-					<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Middlename</div>
-					<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name1 }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Lastname</div>
-					<div class="col-xs-9  pull-left">&nbsp;&nbsp;{{ model.name2 }}</div>
-				</div> <br>
-				<div class="row">
-					<div class="col-xs-3">
-						Address
+			<div class="background">
+				<div class="userform" [hidden]="!submitted">
+					<br>
+					<h2>&nbsp; Login Information</h2>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Firstname</h6>
+							<h4> {{ model.name }}</h4>
+						</div>
 					</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.address }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Age</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.age }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Gender</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.power }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Birthday</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.birthday }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Email</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.email }}</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">Mobile no.</div>
-					<div class="col-xs-9 pull-left">&nbsp;&nbsp;{{ model.mobile }}</div>
-				</div>
-
-				<br />
-				<button class="btn btn-primary" (click)="submitted=false">
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Middlename</h6>
+							<h4> {{ model.name1 }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Lastname</h6>
+							<h4> {{ model.name2 }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Address</h6>
+							<h4>{{ model.address }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Age</h6>
+							<h4>{{ model.age }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Gender</h6>
+							<h4>{{ model.power }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Birthday</h6>
+							<h4>{{ model.birthday }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Email</h6>
+							<h4>{{ model.email }}</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<h6>Mobile no.</h6>
+							<h4>{{ model.mobile }}</h4>
+						</div>
+					</div>
+					<br />
+					<button class="btn btn-primary" (click)="submitted=false">
           Edit
         </button>
+				</div>
 			</div>
 		</div>
 		<div class="adds">
