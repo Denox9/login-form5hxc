@@ -62,19 +62,18 @@ nav a {
   margin-right: 10px;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
   border-radius: 4px;
 }
 nav a:visited,
 a:link {
-  color: #607d8b;
+  color: #ffffff;
+  text-decoration: none;
 }
 nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
+  color: #03e5a1;
 }
 nav a.active {
-  color: #039be5;
+  color: #000000;
 }
 
 /* everywhere else */
