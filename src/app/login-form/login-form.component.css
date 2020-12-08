@@ -73,7 +73,7 @@
   display: grid;
   grid-template-columns: repeat(autofill, 1fr);
   line-height: 1em;
-  background-color: #00ffd5d0;
+  background-color: #00ffd5a1;
   width: 20em;
   height: 3em;
   margin-left: 2em;
